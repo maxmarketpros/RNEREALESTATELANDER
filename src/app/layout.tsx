@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | RNE Real Estate Media",
   },
   description:
-    "Premium real estate photography, drone media, 3D tours, floor plans, and virtual staging for agents and builders across the DFW area. Serving Parker, Tarrant, Wise & Palo Pinto counties. MLS-ready deliverables with fast turnaround. Call (940) 327-9977.",
+    "Premium real estate photography, drone media, 3D tours, floor plans, and virtual staging for agents and builders across the DFW area. Serving Parker, Tarrant, Wise & Palo Pinto counties. MLS-ready deliverables with fast turnaround.",
   keywords: [
     "real estate photography",
     "real estate photography DFW",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     siteName: "RNE Real Estate Media",
     title: "RNE Real Estate Media | Premium Real Estate Photography & Media",
     description:
-      "Premium real estate photography, drone media, 3D tours, floor plans, and virtual staging for agents and builders across the DFW area. Call (940) 327-9977.",
+      "Premium real estate photography, drone media, 3D tours, floor plans, and virtual staging for agents and builders across the DFW area.",
     images: [
       {
         url: "/images/residential-exterior-gallery/1.webp",
