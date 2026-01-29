@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, Instagram, Facebook } from "lucide-react";
 
 const quickLinks = [
     { href: "#services", label: "Services" },
@@ -28,11 +28,32 @@ export default function Footer() {
                             height={56}
                             className="h-12 w-auto mb-6"
                         />
-                        <p className="text-gray-400 leading-relaxed max-w-md">
+                        <p className="text-gray-400 leading-relaxed max-w-md mb-6">
                             Premium real estate media services for agents and builders across
                             the DFW metroplex. Photography, videography, drone, 3D tours, and
                             more.
                         </p>
+                        {/* Social Media Links */}
+                        <div className="flex items-center gap-4">
+                            <a
+                                href="https://www.instagram.com/rne.real.estate.media"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 flex items-center justify-center border border-white/10 hover:border-[#D07A2D] hover:bg-[#D07A2D]/10 transition-all duration-300 group"
+                                aria-label="Follow us on Instagram"
+                            >
+                                <Instagram className="w-5 h-5 text-gray-400 group-hover:text-[#D07A2D]" />
+                            </a>
+                            <a
+                                href="https://www.facebook.com/share/1FG8gZMeKr/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-10 h-10 flex items-center justify-center border border-white/10 hover:border-[#D07A2D] hover:bg-[#D07A2D]/10 transition-all duration-300 group"
+                                aria-label="Follow us on Facebook"
+                            >
+                                <Facebook className="w-5 h-5 text-gray-400 group-hover:text-[#D07A2D]" />
+                            </a>
+                        </div>
                     </div>
 
                     {/* Quick Links */}
@@ -92,16 +113,25 @@ export default function Footer() {
                     <p className="text-gray-500 text-sm">
                         © {currentYear} RNE Real Estate Media. All rights reserved.
                     </p>
-                    <div className="flex items-center gap-2">
-                        <div className="w-6 h-6 flex items-center justify-center">
-                            <Image
-                                src="/images/logo.webp"
-                                alt="RNE"
-                                width={24}
-                                height={24}
-                                className="w-6 h-6 object-contain opacity-50"
-                            />
-                        </div>
+                    <div className="flex items-center gap-4">
+                        <a
+                            href="https://www.instagram.com/rne.real.estate.media"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-500 hover:text-[#D07A2D] transition-colors duration-200"
+                            aria-label="Instagram"
+                        >
+                            <Instagram className="w-5 h-5" />
+                        </a>
+                        <a
+                            href="https://www.facebook.com/share/1FG8gZMeKr/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-500 hover:text-[#D07A2D] transition-colors duration-200"
+                            aria-label="Facebook"
+                        >
+                            <Facebook className="w-5 h-5" />
+                        </a>
                     </div>
                 </div>
             </div>

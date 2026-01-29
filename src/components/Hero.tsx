@@ -32,14 +32,14 @@ export default function Hero() {
             setTimeout(() => {
                 setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
                 setIsTransitioning(false);
-            }, 1000); // Transition duration
-        }, 6000); // Change image every 6 seconds
+            }, 1000);
+        }, 6000);
 
         return () => clearInterval(interval);
     }, []);
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <section className="relative min-h-screen flex items-center justify-center pt-20 pb-32 lg:pb-20 overflow-hidden">
             {/* Background Slideshow */}
             <div className="absolute inset-0">
                 {heroImages.map((image, index) => (
@@ -81,29 +81,37 @@ export default function Hero() {
             {/* Content */}
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 {/* Service Area Microcopy */}
-                <p className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-8">
-                    Serving Parker, Tarrant, Wise, Palo Pinto & surrounding areas
+                <p className="text-[10px] sm:text-xs tracking-[0.2em] sm:tracking-[0.3em] uppercase text-gray-400 mb-4 sm:mb-8">
+                    <span className="sm:hidden">Serving Parker, Tarrant, Wise & Palo Pinto</span>
+                    <span className="hidden sm:inline">Serving Parker, Tarrant, Wise, Palo Pinto & surrounding areas</span>
                 </p>
 
                 {/* Main Headline */}
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6">
-                    Premium Real Estate Media
-                    <br />
-                    <span className="text-[#D07A2D]">That Helps Listings Stand Out</span>
+                <h1 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] sm:leading-tight mb-4 sm:mb-6">
+                    <span className="sm:hidden">
+                        Premium Real Estate Media
+                        <br />
+                        <span className="text-[#D07A2D]">That Sells Properties</span>
+                    </span>
+                    <span className="hidden sm:inline">
+                        Premium Real Estate Media
+                        <br />
+                        <span className="text-[#D07A2D]">That Helps Listings Stand Out</span>
+                    </span>
                 </h1>
 
                 {/* Subheadline */}
-                <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-                    Photography, video, drone, 3D tours, floor plans, and virtual staging
-                    for agents and builders across the DFW area.
+                <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2 sm:px-0">
+                    <span className="sm:hidden">Photography, drone, 3D tours & virtual staging for agents across DFW.</span>
+                    <span className="hidden sm:inline">Photography, video, drone, 3D tours, floor plans, and virtual staging for agents and builders across the DFW area.</span>
                 </p>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-8 sm:mb-12">
                     <Button
                         asChild
                         size="lg"
-                        className="bg-[#D07A2D] hover:bg-[#B86A25] text-white rounded-none px-8 py-6 text-base font-medium tracking-wide transition-all duration-300 hover:shadow-[0_0_30px_rgba(208,122,45,0.4)]"
+                        className="w-full sm:w-auto bg-[#D07A2D] hover:bg-[#B86A25] text-white rounded-none px-8 py-5 sm:py-6 text-base font-medium tracking-wide transition-all duration-300 hover:shadow-[0_0_30px_rgba(208,122,45,0.4)]"
                     >
                         <a href="#contact">Get a Quote</a>
                     </Button>
@@ -111,14 +119,14 @@ export default function Hero() {
                         variant="outline"
                         size="lg"
                         asChild
-                        className="border-white/30 text-white hover:bg-white/10 hover:border-[#D07A2D] rounded-none px-8 py-6 text-base font-medium tracking-wide transition-all duration-300 backdrop-blur-sm"
+                        className="w-full sm:w-auto border-white/30 text-white hover:bg-white/10 hover:border-[#D07A2D] rounded-none px-8 py-5 sm:py-6 text-base font-medium tracking-wide transition-all duration-300 backdrop-blur-sm"
                     >
                         <a href="#portfolio">View Portfolio</a>
                     </Button>
                 </div>
 
-                {/* Trust Chips */}
-                <div className="flex flex-wrap items-center justify-center gap-3">
+                {/* Trust Chips - Hidden on mobile */}
+                <div className="hidden sm:flex flex-wrap items-center justify-center gap-3">
                     {trustChips.map((chip) => (
                         <Badge
                             key={chip}
@@ -130,8 +138,8 @@ export default function Hero() {
                     ))}
                 </div>
 
-                {/* Phone CTA */}
-                <div className="mt-12">
+                {/* Phone CTA - Hidden on mobile (covered by sticky CTA bar) */}
+                <div className="hidden sm:block mt-12">
                     <a
                         href="tel:+19403279977"
                         className="inline-flex items-center gap-3 text-gray-300 hover:text-[#D07A2D] transition-colors duration-200 text-lg"
@@ -142,8 +150,8 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Slideshow Indicators */}
-            <div className="absolute bottom-24 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10">
+            {/* Slideshow Indicators - Adjusted position for mobile */}
+            <div className="absolute bottom-36 sm:bottom-24 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10">
                 {heroImages.map((_, index) => (
                     <button
                         key={index}
@@ -155,7 +163,7 @@ export default function Hero() {
                             }, 500);
                         }}
                         className={`w-2 h-2 transition-all duration-300 ${index === currentImageIndex
-                            ? "w-8 bg-[#D07A2D]"
+                            ? "w-6 sm:w-8 bg-[#D07A2D]"
                             : "bg-white/30 hover:bg-white/50"
                             }`}
                         aria-label={`Go to slide ${index + 1}`}
@@ -163,8 +171,8 @@ export default function Hero() {
                 ))}
             </div>
 
-            {/* Scroll indicator */}
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
+            {/* Scroll indicator - Hidden on mobile */}
+            <div className="hidden sm:block absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
                 <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-1">
                     <div className="w-1.5 h-3 bg-[#D07A2D] rounded-full animate-bounce" />
                 </div>
