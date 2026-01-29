@@ -11,11 +11,18 @@ export default function ContactForm() {
         const myForm = e.currentTarget;
         const formData = new FormData(myForm);
 
+        const params = new URLSearchParams(formData as any);
+
+        // Ensure form-name is explicitly included
+        if (!params.has("form-name")) {
+            params.set("form-name", "quote");
+        }
+
         try {
             await fetch("/", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(formData as any).toString(),
+                body: params.toString(),
             });
             // Redirect to thank you page on success
             window.location.href = "/thank-you";
@@ -99,8 +106,6 @@ export default function ContactForm() {
                         <form
                             name="quote"
                             method="POST"
-                            data-netlify="true"
-                            netlify-honeypot="bot-field"
                             onSubmit={handleSubmit}
                         >
                             {/* Hidden fields for Netlify */}
