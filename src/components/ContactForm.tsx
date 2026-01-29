@@ -4,6 +4,25 @@ import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function ContactForm() {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const myForm = e.currentTarget;
+        const formData = new FormData(myForm);
+
+        try {
+            await fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData as any).toString(),
+            });
+            // Redirect to thank you page on success
+            window.location.href = "/thank-you";
+        } catch (error) {
+            console.error(error);
+            alert("Form submission failed. Please try again.");
+        }
+    };
+
     return (
         <section id="contact" className="py-16 lg:py-24 bg-[#0A0A0A]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,13 +97,17 @@ export default function ContactForm() {
                         <form
                             name="quote"
                             method="POST"
-                            action="/thank-you"
                             data-netlify="true"
                             netlify-honeypot="bot-field"
+                            onSubmit={handleSubmit}
                         >
                             {/* Hidden fields for Netlify */}
                             <input type="hidden" name="form-name" value="quote" />
-                            <input name="bot-field" className="hidden" />
+                            <p className="hidden">
+                                <label>
+                                    Don’t fill this out if you’re human: <input name="bot-field" />
+                                </label>
+                            </p>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 {/* Full Name */}
