@@ -31,8 +31,8 @@ export default function Header() {
         <>
             <header
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                        ? "bg-black/95 backdrop-blur-sm border-b border-[#D07A2D]/30"
-                        : "bg-transparent"
+                    ? "bg-black/95 backdrop-blur-sm border-b border-[#D07A2D]/30"
+                    : "bg-transparent"
                     }`}
             >
                 <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,9 +42,9 @@ export default function Header() {
                             <Image
                                 src="/images/logo.webp"
                                 alt="RNE Real Estate Media"
-                                width={160}
-                                height={50}
-                                className="h-10 w-auto"
+                                width={192}
+                                height={60}
+                                className="h-12 w-auto"
                                 priority
                             />
                         </Link>
