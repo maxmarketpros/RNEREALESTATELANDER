@@ -1,22 +1,25 @@
 <!-- This file is for Netlify Forms detection during build -->
 <!-- It should be placed in the public folder -->
 <html>
-  <head>
-    <title>Form Detection Page</title>
-  </head>
-  <body>
-    <form name="quote" netlify netlify-honeypot="bot-field" hidden>
-      <input type="hidden" name="form-name" value="quote" />
-      <input name="bot-field" />
-      <input name="name" />
-      <input name="phone" />
-      <input name="email" />
-      <input name="company" />
-      <input name="address" />
-      <input name="property-type" />
-      <input name="timeline" />
-      <input name="services" />
-      <input name="notes" />
-    </form>
-  </body>
+
+<head>
+  <title>Form Detection Page</title>
+</head>
+
+<body>
+  <form name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="quote" />
+    <input name="bot-field" />
+    <input name="name" />
+    <input name="phone" />
+    <input name="email" />
+    <input name="company" />
+    <input name="address" />
+    <input name="property-type" />
+    <input name="timeline" />
+    <input name="services" />
+    <input name="notes" />
+  </form>
+</body>
+
 </html>
