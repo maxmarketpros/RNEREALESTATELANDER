@@ -33,22 +33,23 @@ export default function VideoShowcase() {
                     {videos.map((video) => (
                         <div
                             key={video.id}
-                            className="group relative bg-[#111] border border-white/5 hover:border-[#D07A2D]/30 transition-all duration-300"
+                            className="group relative bg-[#111] border border-white/5 hover:border-[#D07A2D]/30 transition-all duration-300 overflow-hidden"
                         >
                             {/* Video Container */}
                             <div className="relative aspect-video">
                                 <iframe
                                     src={`https://drive.google.com/file/d/${video.id}/preview`}
                                     className="absolute inset-0 w-full h-full"
-                                    allow="autoplay; encrypted-media"
+                                    allow="autoplay; encrypted-media; fullscreen"
                                     allowFullScreen
                                     title={video.title}
+                                    style={{ border: 0 }}
                                 />
                             </div>
 
                             {/* Video Title Bar */}
-                            <div className="p-4 border-t border-white/5">
-                                <h3 className="text-white font-medium">{video.title}</h3>
+                            <div className="p-4 border-t border-white/5 bg-[#0D0D0D]">
+                                <h3 className="text-white font-medium group-hover:text-[#D07A2D] transition-colors">{video.title}</h3>
                             </div>
                         </div>
                     ))}
