@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import PortfolioGallery from "@/components/PortfolioGallery";
+import VideoShowcase from "@/components/VideoShowcase";
 import Services from "@/components/Services";
 import Pricing from "@/components/Pricing";
 import Process from "@/components/Process";
@@ -16,6 +17,7 @@ export default function Home() {
       <Header />
       <Hero />
       <PortfolioGallery />
+      <VideoShowcase />
       <Services />
       <Pricing />
       <Process />
