@@ -4,7 +4,6 @@ import PortfolioGallery from "@/components/PortfolioGallery";
 import VideoShowcase from "@/components/VideoShowcase";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
-import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
@@ -19,7 +18,6 @@ export default function Home() {
       <VideoShowcase />
       <Services />
       <Process />
-      <Testimonials />
       <FAQ />
       <ContactForm />
       <Footer />

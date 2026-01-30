@@ -29,7 +29,7 @@ const faqs = [
     {
         question: "Do you work with both commercial and residential properties?",
         answer:
-            "Absolutely. We serve real estate agents, builders, property managers, and businesses with both residential and commercial media needs. Our pricing and packages can be customized for any property type.",
+            "Absolutely. We serve Agents, Contractors & Investors with both residential and commercial media needs. Our pricing and packages can be customized for any property type.",
     },
     {
         question: "How should I prepare the property for the shoot?",

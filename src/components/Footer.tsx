@@ -20,15 +20,17 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {/* Logo & Description */}
                     <div className="lg:col-span-2">
-                        <Image
-                            src="/images/logo.webp"
-                            alt="RNE Real Estate Media"
-                            width={180}
-                            height={56}
-                            className="h-12 w-auto mb-6"
-                        />
+                        <div className="border border-white rounded-xl px-3 py-1 inline-block mb-6">
+                            <Image
+                                src="/images/logo.webp"
+                                alt="RNE Real Estate Media"
+                                width={180}
+                                height={56}
+                                className="h-10 w-auto"
+                            />
+                        </div>
                         <p className="text-gray-400 leading-relaxed max-w-md mb-6">
-                            Premium real estate media services for agents and builders across
+                            Premium real estate media services for Agents, Contractors & Investors across
                             the DFW metroplex. Photography, videography, drone, 3D tours, and
                             more.
                         </p>

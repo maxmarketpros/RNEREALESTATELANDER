@@ -19,11 +19,7 @@ const steps = [
         title: "Delivery",
         description: "Receive MLS-ready files directly to your inbox.",
     },
-    {
-        number: "05",
-        title: "Revisions",
-        description: "Request adjustments if needed. We want you satisfied.",
-    },
+
 ];
 
 export default function Process() {
@@ -51,7 +47,7 @@ export default function Process() {
                     {steps.map((step, index) => (
                         <div
                             key={step.number}
-                            className="relative flex flex-col items-center text-center w-1/5"
+                            className="relative flex flex-col items-center text-center w-1/4"
                         >
                             {/* Number Circle */}
                             <div className="relative z-10 w-16 h-16 flex items-center justify-center bg-[#0A0A0A] border-2 border-[#D07A2D] text-[#D07A2D] font-bold text-lg mb-6">

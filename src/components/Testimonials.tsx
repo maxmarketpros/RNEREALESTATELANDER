@@ -29,10 +29,10 @@ export default function Testimonials() {
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <p className="text-xs tracking-[0.3em] uppercase text-[#D07A2D] mb-4">
-                        Client Feedback
+                        Agents, Contractors & Investors
                     </p>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-                        What Clients Say
+                        What They Say
                     </h2>
                 </div>
 

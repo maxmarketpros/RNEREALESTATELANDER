@@ -10,14 +10,14 @@ const portfolioItems = [
         image: "/images/thumbnails/commercial-exterior.webp",
     },
     {
-        title: "Commercial Interior Gallery",
-        slug: "commercial-interior",
-        image: "/images/thumbnails/commercial-interior.webp",
-    },
-    {
         title: "Residential Exterior Gallery",
         slug: "residential-exterior",
         image: "/images/thumbnails/residential-exterior.webp",
+    },
+    {
+        title: "Commercial Interior Gallery",
+        slug: "commercial-interior",
+        image: "/images/thumbnails/commercial-interior.webp",
     },
     {
         title: "Residential Interior Gallery",

@@ -7,12 +7,12 @@ import { Badge } from "@/components/ui/badge";
 import { Phone } from "lucide-react";
 
 const heroImages = [
-    "/images/residential-exterior-gallery/1.webp",
-    "/images/residential-exterior-gallery/2.webp",
-    "/images/residential-exterior-gallery/3.webp",
-    "/images/residential-exterior-gallery/4.webp",
-    "/images/residential-exterior-gallery/5.webp",
-    "/images/residential-exterior-gallery/6.webp",
+    "/images/commercial-exterior-gallery/1.webp",
+    "/images/commercial-exterior-gallery/2.webp",
+    "/images/commercial-exterior-gallery/3.webp",
+    "/images/commercial-exterior-gallery/4.webp",
+    "/images/commercial-exterior-gallery/5.webp",
+    "/images/commercial-exterior-gallery/6.webp",
 ];
 
 const trustChips = [
@@ -93,8 +93,8 @@ export default function Hero() {
 
                 {/* Subheadline */}
                 <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto mb-6 sm:mb-10 leading-relaxed px-2 sm:px-0">
-                    <span className="sm:hidden">Photography, drone, 3D tours & virtual staging for agents across DFW.</span>
-                    <span className="hidden sm:inline">Photography, video, drone, 3D tours, floor plans, and virtual staging for agents and builders across the DFW area.</span>
+                    <span className="sm:hidden">Photography, Videography, Drone Services, 360 Tours & Floor Plans for Agents, Contractors & Investors in DFW.</span>
+                    <span className="hidden sm:inline">Photography, Videography, Drone Services, 360 Tours, Floor Plans for Agents, Contractors & Investors in the DFW Area & Beyond</span>
                 </p>
 
                 {/* CTA Buttons */}

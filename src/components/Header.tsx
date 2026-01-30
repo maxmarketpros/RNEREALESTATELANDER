@@ -38,14 +38,16 @@ export default function Header() {
                     <div className="flex items-center justify-between h-20">
                         {/* Logo */}
                         <Link href="/" className="flex-shrink-0">
-                            <Image
-                                src="/images/logo.webp"
-                                alt="RNE Real Estate Media"
-                                width={192}
-                                height={60}
-                                className="h-12 w-auto"
-                                priority
-                            />
+                            <div className="border border-white rounded-xl px-3 py-1">
+                                <Image
+                                    src="/images/logo.webp"
+                                    alt="RNE Real Estate Media"
+                                    width={192}
+                                    height={60}
+                                    className="h-10 w-auto"
+                                    priority
+                                />
+                            </div>
                         </Link>
 
                         {/* Desktop Navigation */}

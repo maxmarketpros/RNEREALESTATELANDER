@@ -253,7 +253,9 @@ export default function ContactForm() {
                                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                                         {[
                                             "Photography",
-                                            "Drone Services",
+                                            "Videography",
+                                            "Drone Photography",
+                                            "Drone Videography",
                                             "3D Tour",
                                             "3D Tour + Floor Plan",
                                             "Virtual Staging",
