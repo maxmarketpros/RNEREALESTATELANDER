@@ -88,16 +88,7 @@ export default function Hero() {
 
                 {/* Main Headline */}
                 <h1 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] sm:leading-tight mb-4 sm:mb-6">
-                    <span className="sm:hidden">
-                        Premium Real Estate Media
-                        <br />
-                        <span className="text-[#D07A2D]">That Makes Your Brand Stand Out</span>
-                    </span>
-                    <span className="hidden sm:inline">
-                        Premium Real Estate Media
-                        <br />
-                        <span className="text-[#D07A2D]">That Makes Your Brand Stand Out</span>
-                    </span>
+                    Premium Real Estate Media
                 </h1>
 
                 {/* Subheadline */}
