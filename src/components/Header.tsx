@@ -7,12 +7,12 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
-    { href: "#services", label: "Services" },
-    { href: "#portfolio", label: "Portfolio" },
-    { href: "#pricing", label: "Pricing" },
-    { href: "#process", label: "Process" },
-    { href: "#faq", label: "FAQ" },
-    { href: "#contact", label: "Contact" },
+    { href: "/#services", label: "Services" },
+    { href: "/#portfolio", label: "Portfolio" },
+    { href: "/#pricing", label: "Pricing" },
+    { href: "/#process", label: "Process" },
+    { href: "/#faq", label: "FAQ" },
+    { href: "/#contact", label: "Contact" },
 ];
 
 export default function Header() {
@@ -78,7 +78,7 @@ export default function Header() {
                                 asChild
                                 className="bg-[#D07A2D] hover:bg-[#B86A25] text-white rounded-none px-6 py-2 text-sm font-medium tracking-wide transition-all duration-200"
                             >
-                                <a href="#contact">Get a Quote</a>
+                                <a href="/#contact">Get a Quote</a>
                             </Button>
                         </div>
 
@@ -141,7 +141,7 @@ export default function Header() {
                                     className="w-full bg-[#D07A2D] hover:bg-[#B86A25] text-white rounded-none"
                                 >
                                     <a
-                                        href="#contact"
+                                        href="/#contact"
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         Get a Quote

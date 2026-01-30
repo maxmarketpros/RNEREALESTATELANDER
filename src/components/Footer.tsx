@@ -4,12 +4,12 @@ import { Separator } from "@/components/ui/separator";
 import { Phone, Mail, Instagram, Facebook } from "lucide-react";
 
 const quickLinks = [
-    { href: "#services", label: "Services" },
-    { href: "#portfolio", label: "Portfolio" },
-    { href: "#pricing", label: "Pricing" },
-    { href: "#process", label: "Process" },
-    { href: "#faq", label: "FAQ" },
-    { href: "#contact", label: "Contact" },
+    { href: "/#services", label: "Services" },
+    { href: "/#portfolio", label: "Portfolio" },
+    { href: "/#pricing", label: "Pricing" },
+    { href: "/#process", label: "Process" },
+    { href: "/#faq", label: "FAQ" },
+    { href: "/#contact", label: "Contact" },
 ];
 
 export default function Footer() {
