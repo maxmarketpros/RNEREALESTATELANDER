@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
-import { Phone, Mail, Instagram, Facebook } from "lucide-react";
+import { Phone, Mail, Facebook } from "lucide-react";
 
 const quickLinks = [
     { href: "/#services", label: "Services" },
@@ -36,15 +36,7 @@ export default function Footer() {
                         </p>
                         {/* Social Media Links */}
                         <div className="flex items-center gap-4">
-                            <a
-                                href="https://www.instagram.com/rne.real.estate.media"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-10 h-10 flex items-center justify-center border border-white/10 hover:border-[#D07A2D] hover:bg-[#D07A2D]/10 transition-all duration-300 group"
-                                aria-label="Follow us on Instagram"
-                            >
-                                <Instagram className="w-5 h-5 text-gray-400 group-hover:text-[#D07A2D]" />
-                            </a>
+
                             <a
                                 href="https://www.facebook.com/share/1FG8gZMeKr/"
                                 target="_blank"
@@ -115,15 +107,7 @@ export default function Footer() {
                         © {currentYear} RNE Real Estate Media. All rights reserved.
                     </p>
                     <div className="flex items-center gap-4">
-                        <a
-                            href="https://www.instagram.com/rne.real.estate.media"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-gray-500 hover:text-[#D07A2D] transition-colors duration-200"
-                            aria-label="Instagram"
-                        >
-                            <Instagram className="w-5 h-5" />
-                        </a>
+
                         <a
                             href="https://www.facebook.com/share/1FG8gZMeKr/"
                             target="_blank"
