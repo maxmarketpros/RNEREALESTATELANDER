@@ -91,12 +91,12 @@ export default function Hero() {
                     <span className="sm:hidden">
                         Premium Real Estate Media
                         <br />
-                        <span className="text-[#D07A2D]">That Sells Properties</span>
+                        <span className="text-[#D07A2D]">That Makes Your Brand Stand Out</span>
                     </span>
                     <span className="hidden sm:inline">
                         Premium Real Estate Media
                         <br />
-                        <span className="text-[#D07A2D]">That Helps Listings Stand Out</span>
+                        <span className="text-[#D07A2D]">That Makes Your Brand Stand Out</span>
                     </span>
                 </h1>
 
