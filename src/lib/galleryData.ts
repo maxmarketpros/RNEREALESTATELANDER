@@ -36,7 +36,7 @@ export const galleries: Record<string, GalleryData> = {
         slug: "residential-interior",
         description:
             "Beautiful interior photography showcasing living spaces, kitchens, bedrooms, and home features.",
-        imageCount: 12,
+        imageCount: 8,
         folder: "residential-interior-gallery",
     },
 };

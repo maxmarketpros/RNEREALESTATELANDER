@@ -20,6 +20,11 @@ const portfolioItems = [
         image: "/images/thumbnails/commercial-interior.webp",
     },
 
+    {
+        title: "Residential Interior Gallery",
+        slug: "residential-interior",
+        image: "/images/residential-interior-gallery/7.webp",
+    },
 ];
 
 export default function PortfolioGallery() {
@@ -49,7 +54,7 @@ export default function PortfolioGallery() {
                                 src={item.image}
                                 alt={item.title}
                                 fill
-                                className="object-contain transition-transform duration-700 group-hover:scale-105"
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 sizes="(max-width: 768px) 100vw, 50vw"
                             />
 
