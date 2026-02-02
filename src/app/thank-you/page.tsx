@@ -1,3 +1,5 @@
+"use client";
+
 import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -36,6 +38,7 @@ export default function ThankYouPage() {
                     {/* Phone CTA */}
                     <a
                         href="tel:+19403279977"
+                        onClick={() => (window as any).gtag_report_conversion && (window as any).gtag_report_conversion("tel:+19403279977")}
                         className="inline-flex items-center gap-3 text-white bg-[#111] border border-white/10 hover:border-[#D07A2D]/50 px-8 py-4 mb-8 transition-all duration-300 hover:shadow-[0_0_30px_rgba(208,122,45,0.15)]"
                     >
                         <Phone className="w-5 h-5 text-[#D07A2D]" />

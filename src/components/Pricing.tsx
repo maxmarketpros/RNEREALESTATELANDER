@@ -1,3 +1,5 @@
+"use client";
+
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Camera, Plane, View, Wand2, Phone } from "lucide-react";
@@ -189,7 +191,7 @@ export default function Pricing() {
                                 variant="outline"
                                 className="flex-1 border-white/20 text-white hover:bg-white/5 hover:border-[#D07A2D] rounded-none text-sm"
                             >
-                                <a href="tel:+19403279977" className="flex items-center justify-center gap-2">
+                                <a href="tel:+19403279977" onClick={() => (window as any).gtag_report_conversion && (window as any).gtag_report_conversion("tel:+19403279977")} className="flex items-center justify-center gap-2">
                                     <Phone className="w-4 h-4" />
                                     (940) 327-9977
                                 </a>

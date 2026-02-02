@@ -63,6 +63,7 @@ export default function ContactForm() {
                         <div className="space-y-6">
                             <a
                                 href="tel:+19403279977"
+                                onClick={() => (window as any).gtag_report_conversion && (window as any).gtag_report_conversion("tel:+19403279977")}
                                 className="flex items-center gap-4 text-gray-300 hover:text-[#D07A2D] transition-colors duration-200"
                             >
                                 <div className="w-12 h-12 flex items-center justify-center border border-white/10 hover:border-[#D07A2D]/50 transition-colors">
@@ -307,6 +308,7 @@ export default function ContactForm() {
                                 Or call now:{" "}
                                 <a
                                     href="tel:+19403279977"
+                                    onClick={() => (window as any).gtag_report_conversion && (window as any).gtag_report_conversion("tel:+19403279977")}
                                     className="text-[#D07A2D] hover:underline"
                                 >
                                     (940) 327-9977

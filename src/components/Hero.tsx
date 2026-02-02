@@ -133,6 +133,7 @@ export default function Hero() {
                 <div className="hidden sm:block mt-12">
                     <a
                         href="tel:+19403279977"
+                        onClick={() => (window as any).gtag_report_conversion && (window as any).gtag_report_conversion("tel:+19403279977")}
                         className="inline-flex items-center gap-3 text-gray-300 hover:text-[#D07A2D] transition-colors duration-200 text-lg"
                     >
                         <Phone className="h-5 w-5" />

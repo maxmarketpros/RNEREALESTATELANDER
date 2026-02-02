@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
@@ -75,6 +77,7 @@ export default function Footer() {
                         <div className="space-y-4">
                             <a
                                 href="tel:+19403279977"
+                                onClick={() => (window as any).gtag_report_conversion && (window as any).gtag_report_conversion("tel:+19403279977")}
                                 className="flex items-center gap-3 text-gray-400 hover:text-[#D07A2D] transition-colors duration-200 text-sm"
                             >
                                 <Phone className="w-4 h-4" />

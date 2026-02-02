@@ -70,7 +70,7 @@ export default function Header() {
                                 asChild
                                 className="border-[#D07A2D] text-[#D07A2D] hover:bg-[#D07A2D] hover:text-white rounded-none px-5 py-2 text-sm font-medium tracking-wide transition-all duration-200"
                             >
-                                <a href="tel:+19403279977" className="flex items-center gap-2">
+                                <a href="tel:+19403279977" onClick={() => (window as any).gtag_report_conversion && (window as any).gtag_report_conversion("tel:+19403279977")} className="flex items-center gap-2">
                                     <Phone className="h-4 w-4" />
                                     (940) 327-9977
                                 </a>
@@ -131,6 +131,7 @@ export default function Header() {
                                 >
                                     <a
                                         href="tel:+19403279977"
+                                        onClick={() => (window as any).gtag_report_conversion && (window as any).gtag_report_conversion("tel:+19403279977")}
                                         className="flex items-center justify-center gap-2"
                                     >
                                         <Phone className="h-4 w-4" />

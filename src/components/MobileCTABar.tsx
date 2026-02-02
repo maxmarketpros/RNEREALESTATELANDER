@@ -14,6 +14,7 @@ export default function MobileCTABar() {
                 >
                     <a
                         href="tel:+19403279977"
+                        onClick={() => (window as any).gtag_report_conversion && (window as any).gtag_report_conversion("tel:+19403279977")}
                         className="flex items-center justify-center gap-2"
                     >
                         <Phone className="h-4 w-4" />

@@ -237,6 +237,22 @@ export default function RootLayout({
             gtag('config', 'AW-17490641846');
           `}
         </Script>
+        <Script id="google-ads-conversion" strategy="afterInteractive">
+          {`
+            function gtag_report_conversion(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                  'send_to': 'AW-17490641846/o4sHCOOdvPEbELaHmJRB',
+                  'event_callback': callback
+              });
+              return false;
+            }
+          `}
+        </Script>
         {children}
       </body>
     </html>
