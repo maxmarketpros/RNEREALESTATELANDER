@@ -6,8 +6,8 @@ const videos = [
         title: "Property Showcase Video",
     },
     {
-        id: "1BEEyE1RMBLl4mk-mWg9mSJIElD9UdPZu",
-        title: "Aerial Property Tour",
+        id: "1-s4iW8VfwydKj5a4aUP3jDhGBpuejrsB",
+        title: "Commercial Aerial Video",
     },
 ];
 
