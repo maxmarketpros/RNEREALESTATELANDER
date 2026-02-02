@@ -19,11 +19,7 @@ const portfolioItems = [
         slug: "commercial-interior",
         image: "/images/thumbnails/commercial-interior.webp",
     },
-    {
-        title: "Residential Interior Gallery",
-        slug: "residential-interior",
-        image: "/images/thumbnails/residential-interior.webp",
-    },
+
 ];
 
 export default function PortfolioGallery() {
@@ -41,12 +37,12 @@ export default function PortfolioGallery() {
                 </div>
 
                 {/* Gallery Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <div className="flex flex-wrap justify-center gap-6 lg:gap-8">
                     {portfolioItems.map((item) => (
                         <Link
                             key={item.slug}
                             href={`/portfolio/${item.slug}`}
-                            className="group relative aspect-square overflow-hidden bg-[#111] border border-white/5 hover:border-[#D07A2D]/50 transition-all duration-500"
+                            className="w-full md:w-[calc(50%-12px)] lg:w-[calc(50%-16px)] group relative aspect-square overflow-hidden bg-[#111] border border-white/5 hover:border-[#D07A2D]/50 transition-all duration-500"
                         >
                             {/* Image */}
                             <Image
