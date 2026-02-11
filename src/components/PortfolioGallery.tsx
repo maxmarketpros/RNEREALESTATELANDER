@@ -7,17 +7,17 @@ const portfolioItems = [
     {
         title: "Commercial Exterior Gallery",
         slug: "commercial-exterior",
-        image: "/images/thumbnails/commercial-exterior.webp",
+        image: "/images/CARD-THUMBNAILS/commercial-exterior.webp",
     },
     {
         title: "Residential Exterior Gallery",
         slug: "residential-exterior",
-        image: "/images/thumbnails/residential-exterior.webp",
+        image: "/images/CARD-THUMBNAILS/residential-exterior.webp",
     },
     {
         title: "Commercial Interior Gallery",
         slug: "commercial-interior",
-        image: "/images/thumbnails/commercial-interior.webp",
+        image: "/images/CARD-THUMBNAILS/commercial-interior.webp",
     },
 
     {

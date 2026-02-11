@@ -12,7 +12,7 @@ export const galleries: Record<string, GalleryData> = {
         slug: "commercial-exterior",
         description:
             "Professional exterior photography showcasing commercial properties, storefronts, and business locations.",
-        imageCount: 10,
+        imageCount: 9,
         folder: "commercial-exterior-gallery",
     },
     "commercial-interior": {
@@ -20,7 +20,7 @@ export const galleries: Record<string, GalleryData> = {
         slug: "commercial-interior",
         description:
             "High-quality interior photography for offices, retail spaces, restaurants, and commercial venues.",
-        imageCount: 9,
+        imageCount: 10,
         folder: "commercial-interior-gallery",
     },
     "residential-exterior": {
