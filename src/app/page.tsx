@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import PortfolioGallery from "@/components/PortfolioGallery";
 import VideoShowcase from "@/components/VideoShowcase";
+import VirtualStaging from "@/components/VirtualStaging";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import FAQ from "@/components/FAQ";
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <PortfolioGallery />
       <VideoShowcase />
+      <VirtualStaging />
       <Services />
       <Process />
       <FAQ />
